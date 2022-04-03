@@ -18,15 +18,24 @@ import React, { useState } from 'react';
   }
   console.log(setDogUrl);
     return (
-      <div>
-      <header>
-        <h1>DogApp</h1>
-      </header>
-        <p>犬の画像を表示するサイトです。</p>
-        <img src={dogUrl} alt='犬の画像'></img>
-        <div>
-        <button onClick={updateImage}>更新</button>
-        </div>
+      <div className='dogApp'>
+       <header className='header'>
+         <h1 className='title'>DogApp</h1>
+       </header>
+       <main>
+        <div className='contents'>
+          <p className='text'>犬の画像を表示するサイトです。</p>
+          <div className='image-wrapper'>
+            <img className='image' src={dogUrl} alt='犬の画像'></img>
+            <div className='btn-wrapper'>
+            <button className='btn' onClick={updateImage}>更新</button>
+            </div>  
+          </div>
+          <div className='line'>
+          </div>   
+       </div> 
+       </main>
+       
       </div>
    )
 }
