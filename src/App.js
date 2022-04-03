@@ -12,7 +12,7 @@ import React, { useState } from 'react';
     fetch('https://dog.ceo/api/breeds/image/random')
     .then(res=>res.json())
     .then(
-      (result) => {setDogUrl(()=>{result.message});},
+      (result) => setDogUrl(result.message),
       (error)=>{console.log(error)}
     );
   }
