@@ -17,7 +17,7 @@
     "@babel/eslint-parser": "^7.16.5",
     "@babel/preset-env": "^7.16.8",
     "@babel/preset-react": "^7.16.7",
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
     "@techtrain/cli-railway": "^0.1.10",
     "@types/jest": "^27.4.0",
     "@types/react": "^17.0.38",
