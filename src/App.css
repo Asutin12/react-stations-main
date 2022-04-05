@@ -1,3 +1,9 @@
+p,
+h1,
+body{
+    margin:0;
+  padding:0;
+}
 main{
     width: 1440px;
     height: 1024px;
@@ -37,8 +43,9 @@ main{
     max-width: 443px;
     max-height: 268px;
     position: absolute;
-    top: 152px;
+    top: 92px;
     right: 92px;
+    object-fit:cover;
 }
 .btn-wrapper{
     text-align: right;
