@@ -1,8 +1,8 @@
 import React from 'react';
-import DogImage  from './DogImage.js';
+import {DogImage} from './DogImage.js';
 import  {useState} from 'react';
 
-function Description(props){
+export const Description=(props)=>{
   const [dogUrl,setDogUrl] = useState('https://images.dog.ceo/breeds/spaniel-brittany/n02101388_6057.jpg')
   const updateImage=()=>{
     fetch('https://dog.ceo/api/breeds/image/random')
@@ -14,9 +14,8 @@ function Description(props){
     return(
       <div>
         <p className='text'>{props.text}</p>
-        <DogImage dogUrl={dogUrl}/>
+        <DogImage url={dogUrl}/>
         <button className='btn' onClick={updateImage}>更新</button>
       </div>
     );
 };
-export default Description

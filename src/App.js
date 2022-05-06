@@ -1,8 +1,9 @@
 // DO NOT DELETE
 import React from 'react'
 import './App.css'
-import Header from './Header.js'
-import Description from './Description.js'
+import {Header} from './Header.js'
+import {Description} from './Description.js'
+import {DogListContainer} from './DogListContainer.js'
 /**
  * 
  * @type {React.FC}
@@ -16,6 +17,7 @@ import Description from './Description.js'
         <Description text={'犬の画像を表示するアプリです'}/>
         </main>
         <div className='line'></div>
+        <DogListContainer/>
       </div>
     )
   }

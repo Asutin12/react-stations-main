@@ -1,10 +1,9 @@
 import React from 'react'
 
-function DogImage(props){
+export const DogImage = (props) =>{
+    const {url} = props
+    
     return(
-        <div>
-            <img className='image' src={props.dogUrl} alt="dog" />
-        </div>
+            <img className='image' src={url} />
     )
 }
-export default DogImage
